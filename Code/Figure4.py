@@ -59,7 +59,7 @@ for theta in theta_values:
 # Plot z as a function of c_out for both theta values with confidence intervals
 plt.figure(figsize=(10, 6))
 colors = ['blue', 'red']
-labels = ['Homogeneous', 'Heterogeneous']
+labels = ['Uniform', 'Heterogeneous']
 for i, theta in enumerate(theta_values):
     plt.plot(c_out_values, z_values_dict[theta], marker='o', color=colors[i], label=rf'{labels[i]}')
     
